@@ -4,7 +4,7 @@
 
 Read more [Magento 2 Italian Language Pack](https://www.mageplaza.com/magento-2-italian-language-pack.html)
 
-![Mageplaza Italian language pack](https://i.imgur.com/qjWPj1W.png)
+![Mageplaza Italian language pack](https://cdn3.mageplaza.com/media/general/qjWPj1W.png)
 
 ## Overview
 
@@ -20,7 +20,7 @@ Read more [Magento 2 Italian Language Pack](https://www.mageplaza.com/magento-2-
 
 This is status of Italian Language Pack, you can see how many percentage of this project has been done.
 
-![language pack](http://progressed.io/bar/90?title=translated)
+![Italian language pack process](https://progress-bar.dev//?title=completed)
 
 It is not fully translated? Feel free to contribute:
 - [On Crowdin](https://crowdin.com/project/magento-2): It takes time to approve your contribution by Magento team.
@@ -38,13 +38,24 @@ Install the Italian language pack via composer is never easier.
 
 **Install Italian pack**:
 
+With Social Proof (recommend):
+
+```
+composer require mageplaza/magento-2-italian-language-pack:dev-master avada/module-proofo
+php bin/magento setup:static-content:deploy it_IT
+php bin/magento indexer:reindex
+php bin/magento cache:clean
+php bin/magento cache:flush
+```
+
+Without Social Proof:
+
 ```
 composer require mageplaza/magento-2-italian-language-pack:dev-master
 php bin/magento setup:static-content:deploy it_IT
 php bin/magento indexer:reindex
 php bin/magento cache:clean
 php bin/magento cache:flush
-
 ```
 
 
